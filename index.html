@@ -1318,6 +1318,7 @@
     }
 </script>
 
+  <script type="text/x-template" id="app-template">
   <v-app>
     <v-card>
         <v-layout>
@@ -1390,13 +1391,13 @@
                 </template>
             </v-navigation-drawer>
             <v-main style="height:100vh">
-                <?!= include('html/login'); ?>
-                <?!= include('html/table'); ?>
-                <?!= include('html/management'); ?>
-                <?!= include('html/signup'); ?>
-                <?!= include('html/invitation'); ?>
-                <?!= include('html/change_password'); ?>
-                <?!= include('html/user_info'); ?>
+                <?!= include('login'); ?>
+                <?!= include('table'); ?>
+                <?!= include('management'); ?>
+                <?!= include('signup'); ?>
+                <?!= include('invitation'); ?>
+                <?!= include('change_password'); ?>
+                <?!= include('user_info'); ?>
             </v-main>
         </v-layout>
     </v-card>
@@ -1410,6 +1411,8 @@
         </template>
     </v-snackbar>
 </v-app>
+
+    </script>
 
   <script type="module">
     const { createApp } = Vue;
